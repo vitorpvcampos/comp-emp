@@ -31,3 +31,8 @@ python manage.py migrate
 ```
 pipenv run flake8
 ```
+
+#### Testing with pytest
+```
+pipenv run pytest --cov=compemp
+```
