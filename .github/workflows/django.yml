@@ -42,3 +42,12 @@ jobs:
       - name: Lint with flake8
         run: |
           pipenv run flake8 .
+      - name: Test with pytest
+        run: |
+          pipenv run pytest --cov=compemp
+      - name: Posting Coverage
+        env:
+          CODECOV_TOKEN: "04b264b3-9cf9-4830-9ebd-832f4040fd51"
+        run: |
+          pipenv run codecov
+
