@@ -6,6 +6,7 @@ Project developed for technical challenge
 [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![Django 3.1.3](https://img.shields.io/badge/django-3.1.3-blue.svg)](https://www.djangoproject.com/download/)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/vitorpvcampos/django-e-learning/blob/main/LICENSE)
+[![codecov](https://codecov.io/gh/vitorpvcampos/comp-emp/branch/main/graph/badge.svg?token=0BDA2I3QRK)](https://codecov.io/gh/vitorpvcampos/comp-emp)
 
 ### How to run the project?
 
