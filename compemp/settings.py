@@ -32,6 +32,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # Application definition
 
 INSTALLED_APPS = [
+    'graphene_django',
     'companies.apps.CompaniesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -117,3 +118,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Graphene settings
+
+GRAPHENE = {
+    'SCHEMA': 'compemp.schema.schema'
+}
