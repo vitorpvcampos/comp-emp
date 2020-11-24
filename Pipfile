@@ -8,6 +8,9 @@ django = "*"
 python-decouple = "*"
 dj-database-url = "*"
 psycopg2 = "*"
+graphene-django = "*"
+django-graphiql = "*"
+django-filter = "*"
 
 [dev-packages]
 flake8 = "*"
