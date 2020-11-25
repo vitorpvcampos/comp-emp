@@ -1,5 +1,7 @@
-from django.core.exceptions import ValidationError
 import re
+import graphene
+from graphene_django.utils import camelize
+from django.core.exceptions import ValidationError
 
 
 def validate_cpf(cpf):
@@ -50,3 +52,13 @@ def validate_cnpj(cnpj):
         if new_cnpj_number == cnpj_number:
             return cnpj
     raise ValidationError(f"{cnpj} is not a valid CNPJ.")
+
+
+class ErrorType(graphene.Scalar):
+    @staticmethod
+    def serialize(errors):
+        if isinstance(errors, dict):
+            if errors.get("__all__", False):
+                errors["non_field_errors"] = errors.pop("__all__")
+            return camelize(errors)
+        raise Exception("'errors' should be dict!")
