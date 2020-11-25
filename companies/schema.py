@@ -3,6 +3,7 @@ from graphene_django import DjangoObjectType
 from graphene_django.filter import DjangoFilterConnectionField
 from .models import Company, Employee
 from graphql_relay.node.node import from_global_id
+from .facade import validate_cpf, validate_cnpj
 
 
 class CompanyNode(DjangoObjectType):
@@ -31,6 +32,7 @@ class CreateCompany(graphene.relay.ClientIDMutation):
             company_name=input.get('company_name'),
             cnpj=input.get('cnpj'),
         )
+        validate_cnpj(company.cnpj)
         company.save()
 
         return CreateCompany(company=company)
@@ -50,6 +52,7 @@ class CreateEmployee(graphene.relay.ClientIDMutation):
             name=input.get('company'),
             cpf=input.get('cpf'),
         )
+        validate_cpf(employee.cpf)
         employee.save()
 
         return CreateEmployee(employee=employee)
@@ -67,6 +70,7 @@ class UpdateCompany(graphene.relay.ClientIDMutation):
         company = Company.objects.get(pk=from_global_id(input.get('id'))[1])
         company.company_name = input.get('company_name')
         company.cnpj = input.get('cnpj')
+        validate_cnpj(company.cnpj)
         company.save()
 
         return UpdateCompany(employee=company)
@@ -86,6 +90,7 @@ class UpdateEmployee(graphene.relay.ClientIDMutation):
         employee.company = Company.objects.get(company_name=input.get('company'))
         employee.name = input.get('name')
         employee.cpf = input.get('cpf')
+        validate_cpf(employee.cpf)
         employee.save()
 
         return UpdateEmployee(employee=employee)
