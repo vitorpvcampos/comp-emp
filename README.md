@@ -25,7 +25,7 @@ Supposing you have ```git``` and ```python``` >= ```3.9.0``` installed (not test
 ```
 git clone https://github.com/vitorpvcampos/comp-emp.git
 cd comp-emp
-cp contrib/env-sample .env
+cp contrib/env-docker .env
 pip install --upgrade pip
 pip install pipenv
 pipenv install --dev

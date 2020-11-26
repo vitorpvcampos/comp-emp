@@ -4,3 +4,7 @@ omit =
     *schema*
     *url*
     *test*
+    *env*
+    *wsgi*
+    *settings*
+    *asgi*

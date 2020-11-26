@@ -75,12 +75,10 @@ WSGI_APPLICATION = 'compemp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-default_db_url = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
-
 parse_database = partial(dj_database_url.parse, conn_max_age=600)
 
 DATABASES = {
-    'default': config('DATABASE_URL', default=default_db_url, cast=parse_database)
+    "default": dj_database_url.config(default="sqlite:///%s/db.sqlite3" % (BASE_DIR))
 }
 
 # Password validation
