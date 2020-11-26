@@ -52,4 +52,9 @@ pipenv run pytest --cov=compemp
 
 ##### Work environment
 
-The project was developed using an iMac Pro (via ```OpenCore 0.6.3```) running macOS Big Sur version 11.0.1 and the IDE PyCharm Professional 2020.2.3. The implementation was also tested on an AMD machine running the Linux distribution POP!_OS 20.10, with the same IDE.
+The project was developed using an iMac Pro (via ```OpenCore 0.6.3```) running macOS Big Sur version 11.0.1 and the IDE PyCharm Professional 2020.2.3. The implementation was also tested on the Linux distribution POP!_OS 20.10 (running on the same hardware), with the same IDE.
+
+<p align="center">
+    <img src="https://sociedadenovoaeon.org/wp-content/uploads/neofetch.png" alt="Bootstrap logo" width="448" height="280">
+  </a>
+</p>
