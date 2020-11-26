@@ -35,7 +35,7 @@ pipenv install --dev
 
 ```
 docker-compose build
-docker-compose.yml up -d
+docker-compose up -d
 docker-compose run app python manage.py migrate
 docker-compose run app python manage.py createsuperuser
 ```

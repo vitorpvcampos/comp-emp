@@ -49,7 +49,7 @@ class CreateEmployee(graphene.relay.ClientIDMutation):
     def mutate_and_get_payload(root, info, **input):
         employee = Employee(
             company=Company.objects.get(company_name=input.get('company')),
-            name=input.get('company'),
+            name=input.get('name'),
             cpf=input.get('cpf'),
         )
         validate_cpf(employee.cpf)
