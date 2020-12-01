@@ -10,7 +10,7 @@ Project developed for technical challenge
 
 This project was developed as a requirement of a selective process for a vacancy as a Backend Developer. 
 
-The objective was to implement an application with  system to manage companies and its employees, using any Python web framework (in this case, I used [Django](https://docs.djangoproject.com/en/3.1/)) and a [GraphQL](https://graphql.org/learn/) API.
+The objective was to implement a system to manage companies and its employees, using any Python web framework (in this case, I used [Django](https://docs.djangoproject.com/en/3.1/)) and a [GraphQL](https://graphql.org/learn/) API.
 
 As differentials:
 * CPF and CNPJ validation for employees and companies
