@@ -71,11 +71,10 @@
         },
         "graphene-django": {
             "hashes": [
-                "sha256:0e33cdec0774284175c387c2af1e0ef4eb0f4e10a56a3a1b2d39bc3a74d9a538",
-                "sha256:8a4efc7bf954ba0b5a28d3cdb090b36941aca6b83d211e3cd3ab29cf53ac6154"
+                "sha256:37b399a983e6e70d26696d0052b416a030d14f6d8a591d67711916e1fea95861",
+                "sha256:68d5c52f775dea6f5e0578b2c09c0a7cddeb48a957a0000b289d6e6145d6a86d"
             ],
-            "index": "pypi",
-            "version": "==2.13.0"
+            "version": "==2.14.0"
         },
         "graphql-core": {
             "hashes": [
