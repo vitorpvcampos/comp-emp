@@ -141,10 +141,10 @@
         },
         "singledispatch": {
             "hashes": [
-                "sha256:5b06af87df13818d14f08a028e42f566640aef80805c3b50c5056b086e3c2b9c",
-                "sha256:833b46966687b3de7f438c761ac475213e53b306740f1abfaa86e1d1aae56aa8"
+                "sha256:c4ad3947f0cd35d3d99231c37190d2ee7bcbc271c2be6e1e3f4465e73a99511c",
+                "sha256:ca602b0a8389aa93e3b183f57f29edc6af202bef718c2ec53a38ef25ccc5867e"
             ],
-            "version": "==3.4.0.3"
+            "version": "==3.6.0"
         },
         "six": {
             "hashes": [
