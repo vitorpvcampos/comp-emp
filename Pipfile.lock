@@ -79,10 +79,10 @@
         },
         "graphql-core": {
             "hashes": [
-                "sha256:44c9bac4514e5e30c5a595fac8e3c76c1975cae14db215e8174c7fe995825bad",
-                "sha256:aac46a9ac524c9855910c14c48fc5d60474def7f99fd10245e76608eba7af746"
+                "sha256:2ae62ed27eb5c629fdfd06f89bec36a427bef97d37aef41e8f195c5352f22bea",
+                "sha256:972eff18416ad90815c95914b754486270f13fbe1a24e010c7eedbaa903b9386"
             ],
-            "version": "==2.3.2"
+            "version": "==3.1.4"
         },
         "graphql-relay": {
             "hashes": [
