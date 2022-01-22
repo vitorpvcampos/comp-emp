@@ -86,10 +86,10 @@
         },
         "graphql-relay": {
             "hashes": [
-                "sha256:870b6b5304123a38a0b215a79eace021acce5a466bf40cd39fa18cb8528afabb",
-                "sha256:ac514cb86db9a43014d7e73511d521137ac12cf0101b2eaa5f0a3da2e10d913d"
+                "sha256:24ae4e97f781d0bd6c981b50031676d675c8e086519e5bb2cccd238feb470120",
+                "sha256:c683a19041f7a0942b551c69e5548af59e2b8213d158f0d88f525a63f10ccd23"
             ],
-            "version": "==2.0.1"
+            "version": "==3.1.4"
         },
         "promise": {
             "hashes": [
